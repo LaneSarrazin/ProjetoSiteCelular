@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(144, 225, 225);
+}
+.menu{
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(240, 198, 143);
+}
+
+.container a{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+.container a:hover{
+    background-color: blue;
+    color:white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.meio{
+    color: white;
+    padding: 10px;
+    background-color: aliceblue;
+    background-image: url(/ProjetoSite/imagens/imagem_fundo.jpg);
+    background-attachment: fixed;
+}
+
+#botao{
+    background-color:rgb(41, 91, 184);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#botao:hover{
+    background-color: rgb(11, 28, 60);
+    cursor: pointer;
+}
+
+p{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.card{
+    border: 1px solid white;
+    padding: 10px;
+    background-color:rgb(34, 20, 20);
+    text-align: center;
+    padding: 40px;
+    width: 200px;
+    margin: auto;
+}
+
+
+
+
+
