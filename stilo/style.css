@@ -9,13 +9,30 @@ body{
 .menu{
     margin: 10px;
 }
+.hambuguer{
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.mobile_menu{
+    display: none;
+    flex-direction: column;
+    background-color: #001721;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 150px;
+    text-align: center;
+    border: 1px solid blue;
+    z-index: 1;
+}
 
 .container{
     display: flex;
     justify-content: space-between; 
     align-items:flex-end ;
     padding: 20px;
-    background-color: rgb(240, 198, 143);
+    background-color:#14a4c0;
 }
 
 .container a{
@@ -25,7 +42,7 @@ body{
     padding: 10px;
 }
 .container a:hover{
-    background-color: blue;
+    background-color:#50bfe8;
     color:white;
     cursor: pointer;
     transition: 1s;
@@ -35,60 +52,99 @@ body{
     color: white;
     padding: 10px;
     background-color: aliceblue;
-    background-image: url(/ProjetoSiteCelular/imagens/imagem_fundo.jpg);
+    background-image: url(/ProjetoSiteCelular/imagens/imagem_fundo.projpg.jpg);
     background-attachment: fixed;
 }
 
 #botao{
     background-color:rgb(41, 91, 184);
+   
     padding: 10px;
-    margin-top: 10px;
+   
     border-radius: 10px;
-    font-size: 20px;
+    
     font-weight: bold;
 }
 #botao:hover{
     background-color: rgb(11, 28, 60);
     cursor: pointer;
+   
 }
 
 .card{
     border: 1px solid white;
     padding: 10px;
-    background-color:rgb(34, 20, 20);
+    background-color:#263f4a;
     text-align: center;
     padding: 40px;
     width: 200px;
     margin: auto;
+    
 }
+
 .cel{
     margin: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 .cel img{
-    background-color: rgb(130, 169, 169);
+    background-color:#001721;
     margin: 20px;
     text-align: center;
     padding: 40px;
+    box-sizing: border-box;
 
 }
 .info{
     color:cornsilk;
     background-color: rgb(187, 198, 208);
     font-size: 20px;
-    background-image: url(/ProjetoSiteCelular/imagens/imagem_fundo.jpg);
+    background-image: url(/ProjetoSiteCelular/imagens/imagem_fundo.projpg.jpg);
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
     flex-direction: column;
     padding:50px;
+    
 
 }
+.info p{
+    color: black;
+}
 .rodape{
-    background-color:rgb(240, 198, 143);
-    padding: 60px;
+    text-align: center;
+    background-color:#14a4c0;
+    padding: 30px;
     margin-top: 20px;
+   
+  
+}
+
+
+@media (min-width: 768px){
+    .cel{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width :768px){
+
+    .menu{
+        display: none;
+
+    }
+    .hambuguer{
+        display: block;
+    }
+
+    .mobile_menu{
+        display: none;
+    }
+    .mobile_menu.active{
+        display: flex;
+    }
 }
 
 

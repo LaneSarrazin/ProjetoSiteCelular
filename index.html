@@ -6,6 +6,7 @@
     <title>Site Aula</title>
     <link rel="shortcut icon" href="imagens/celPerfil.png" type="image/x-icon">
     <link rel="stylesheet" href="stilo/style.css">
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <header class="container">
@@ -16,8 +17,21 @@
             <a href="#">EMPRESA</a>
             <a href="#">CONTATO</a>
         </div>
+
+        <div class="hamburguer">
+            <i class="fa fa-bars"></i>
+
+        </div>
+
     </header>
+
+    <nav class="mobile_menu">
+        <a href="#">HOME</a>
+        <a href="#">EMPRESA</a>
+        <a href="#">CONTATO</a>
+    </nav>
     
+
     <main class="meio">
         <div class="card">
             <p>
@@ -48,9 +62,18 @@
    
     
     <footer class="rodape">
-        <i>Facebook</i>
-        <i>Instagram</i>
-        <i>Whatzap</i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-whatsapp"></i>    
     </footer>
+
+    <script>
+        const hamburguer = document.querySelector(".hamburguer");
+        const mobileMenu = document.querySelector(".mobile_menu");
+
+        hamburguer.addEventListener('click' , () => {
+            mobileMenu.classList.toggle('active')
+        });
+    </script>
 </body>
 </html>
