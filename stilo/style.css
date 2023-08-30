@@ -12,18 +12,18 @@ body{
 .hambuguer{
     display: none;
     cursor: pointer;
-    font-size: 20px;
+   
+    
 }
+
 .mobile_menu{
+   
     display: none;
     flex-direction: column;
-    background-color: #001721;
-    position: absolute;
     top: 60px;
     right: 10px;
     width: 150px;
     text-align: center;
-    border: 1px solid blue;
     z-index: 1;
 }
 
@@ -58,9 +58,7 @@ body{
 
 #botao{
     background-color:rgb(41, 91, 184);
-   
     padding: 10px;
-   
     border-radius: 10px;
     
     font-weight: bold;
@@ -95,6 +93,7 @@ body{
     text-align: center;
     padding: 40px;
     box-sizing: border-box;
+    border-radius: 15px;
 
 }
 .info{
@@ -121,6 +120,17 @@ body{
    
   
 }
+.rodape i{
+    margin: 15px;
+    background-color:lightgray;
+    padding: 15px;
+    border-radius: 10px;
+}
+.rodape i:hover{
+    background-color:lightblue;
+    transition:0.5s;
+}
+
 
 
 @media (min-width: 768px){
@@ -137,10 +147,22 @@ body{
     }
     .hambuguer{
         display: block;
+
     }
+    
 
     .mobile_menu{
         display: none;
+        
+    }
+    .mobile_menu a{
+        text-decoration: none;
+       background-color:rgb(144, 225, 225);
+        padding: 10px;
+        
+    }
+    .mobile_menu a:hover{
+        background-color: aliceblue;
     }
     .mobile_menu.active{
         display: flex;
